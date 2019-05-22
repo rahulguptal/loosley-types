@@ -32,8 +32,7 @@ else
 }
 student.prototype.report=function(){
     console.log(`..........REPORT..........`);
-    console.log(this.name);
-    console.log(this.total());
-    console.log(this.per());
-    console.log(this.grade());
+    this.total();
+   this.per();
+   this.grade();
 } 
