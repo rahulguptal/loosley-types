@@ -1,4 +1,4 @@
-function student(Name,Rollno,phy,chm,math)
+function Student(Name,Rollno,phy,chm,math)
 {
 this.name=Name;
 this.rollno=Rollno;
@@ -6,17 +6,17 @@ this.phy=phy;
 this.chm=chm;
 this.math=math;
 }
-student.prototype.tot=function(){
+Student.prototype.tot=function(){
 sum=+this.phy+this.chm+this.math;
 return sum;
 }
-student.prototype.total = function(){
+Student.prototype.total = function(){
 console.log('total marks obtained is :' +this.tot());
 }
-student.prototype.per= function(){
+Student.prototype.per= function(){
 console.log("total per obtained is "  +this.tot()/3);
 }
-student.prototype.grade=function(){
+Student.prototype.grade=function(){
 if(this.tot()/3>=90)
   console.log(`grade of ${this.name} is: + A1`);
 else if(this.tot()/3>=80 && this.tot()/3<90)
@@ -30,7 +30,7 @@ else if(this.tot()/3>=50 && this.tot()/3<60)
 else 
    console.log(`grade of ${this.name}: bed performance.....do work hard......`);
 }
-student.prototype.report=function(){
+Student.prototype.report=function(){
     console.log(`..........REPORT..........`);
     this.total();
    this.per();
