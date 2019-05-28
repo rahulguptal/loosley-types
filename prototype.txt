@@ -26,7 +26,7 @@ else if(this.tot()/3>=70 && this.tot()/3<80)
 else if(this.tot()/3>=60 && this.tot()/3<70)
    console.log(`grade of ${this.name} is: B2`);
 else 
-   console.log('bed performance')
+   console.log(`GRADE OF ${this.name} IS: VERY POOR GRADE...WORK HARD...STUDY MORE`);
 }
 student.prototype.report=function(){
     console.log(this.total());
